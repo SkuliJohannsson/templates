@@ -1,0 +1,13 @@
+{
+  "name": "tmp-browserify",
+  "version": "1.0.0",
+  "description": "minimal template",
+  "main": "static/bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify main.js --debug --verbose | exorcist static/bundle.js.map > static/bundle.js",
+    "watch": "watchify main.js --verbose -o static/bundle.js"
+  },
+  "author": "Skuli",
+  "license": "ISC"
+}
